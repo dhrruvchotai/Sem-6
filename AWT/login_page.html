@@ -1,0 +1,62 @@
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Login Page</title>
+            <style>
+                .main{
+                    margin-top: 10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+                form{
+                    border: 1px solid black;
+                    width: 40%;
+                }
+                .username{
+                    border-radius: 20;
+                }
+                .password{
+                    border-radius: 20;
+                }
+                .login-btn{
+                    color: red;
+                    background-color: white;
+                    margin-bottom: 10px;
+                }
+            </style>
+            </head>
+            <body>
+                <div class="main">
+                <form name="loginForm" onsubmit="return login()">
+                    <table>
+                        <tr>
+                            <td><h3>Username</h3></td>
+                            <td><input type="text" class="username" name="username"
+                                    placeholder="Username" ></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Password</h3></td>
+                            <td><input type="text" class="password" name="password"
+                                    placeholder="password"></td>
+                        </tr>
+                    </table>
+                    <button class="login-btn" type="submit" >
+                        Login
+                    </button>
+                </form>
+                </div>
+            <script>
+                function login(){
+                    let username = document.loginForm.username.value
+                    let password = document.loginForm.password.value
+                    console.log('Username : ',username)
+                    console.log('Password : ',password)
+                    return false;
+                }
+            </script>
+            </body>
+        </html>
