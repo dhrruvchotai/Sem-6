@@ -1,0 +1,7 @@
+//This is comment
+/* This is another 
+ comment */
+
+void main(){
+    int a = 10;
+}
